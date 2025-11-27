@@ -1,129 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Best Website in My Life</title>
-  <meta name="description" content="A small, animated personal site — modern, responsive, and CSS-powered." />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="fade-up delay-1">
-      <div class="brand">
-        <div class="logo">BM</div>
-        <div>
-          <div style="font-weight:800;">BestMe</div>
-          <div style="font-size:12px;color:var(--muted);margin-top:2px;">Design • Code • Grow</div>
+
+    <div class="container">
+        <div class="login-box">
+            <h2>Welcome Back</h2>
+
+            <form>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+
+                <p class="register-text">
+                    Don't have an account? <a href="#">Register</a>
+                </p>
+            </form>
         </div>
-      </div>
-
-      <nav class="fade-up delay-2" aria-label="Primary">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <section class="hero fade-up delay-2" aria-labelledby="intro">
-      <div class="blob one" aria-hidden="true"></div>
-      <div class="blob two" aria-hidden="true"></div>
-
-      <div class="hero-left">
-        <div class="hi">Hello — I'm <strong style="color:#fff">Mahesh</strong></div>
-        <h1 id="intro" class="title">Build the <span class="typing">best website of my life</span></h1>
-        <p class="lead">
-          A clean, modern starter site with subtle micro-interactions and delightful animations — perfect for a portfolio, personal brand, or landing page.
-        </p>
-
-        <div class="cta-row">
-          <a class="btn" href="#projects">Show projects</a>
-          <a class="btn btn-secondary" href="#contact">Get in touch</a>
-        </div>
-      </div>
-
-      <aside class="profile fade-up delay-3" aria-label="Profile card">
-        <div class="avatar" aria-hidden="true">MM</div>
-        <div class="profile-info">
-          <h3>Mahesh Madane</h3>
-          <p>Full-stack dev • UI/UX enthusiast • loves neat code & fast sites</p>
-
-          <div style="margin-top:12px; display:flex; gap:8px;">
-            <div style="font-size:12px;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02);">Available for hire</div>
-            <div style="font-size:12px;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02);">Open to ideas</div>
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <div class="sections">
-      <div class="left-col">
-        <section id="projects" class="card fade-up delay-3" aria-labelledby="proj-heading">
-          <h2 id="proj-heading">Featured Projects</h2>
-          <div class="projects" role="list">
-            <article class="project" role="listitem">
-              <h3>Smart Trading Dashboard</h3>
-              <p>Real-time market visualizer built with React, Flask & optimized WebSocket streams.</p>
-            </article>
-            <article class="project" role="listitem">
-              <h3>College Chatbot (MITBOT)</h3>
-              <p>Knowledge bot using embeddings and open-source models — helps students find syllabus answers instantly.</p>
-            </article>
-            <article class="project" role="listitem">
-              <h3>Shopical Admin Panel</h3>
-              <p>Admin dashboard for e-commerce management with file uploads and role-based access.</p>
-            </article>
-            <article class="project" role="listitem">
-              <h3>Personal Blog & Notes</h3>
-              <p>Markdown-powered static blog with search and tag filters.</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="skills" class="card fade-up delay-4" aria-labelledby="skill-heading">
-          <h2 id="skill-heading">Skills</h2>
-          <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS / Tailwind</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Python</div>
-            <div class="skill">Django / Flask</div>
-            <div class="skill">React</div>
-            <div class="skill">SQL / MySQL</div>
-            <div class="skill">Deployment</div>
-          </div>
-        </section>
-      </div>
-
-      <aside class="sidebar">
-        <div class="card fade-up delay-2">
-          <div class="about-avatar">MM</div>
-          <h2>About</h2>
-          <p style="color:var(--muted); margin-top:8px;">I design and build web apps that are fast, accessible, and a joy to use. I care about details — pixel-perfect UI and clean architecture.</p>
-        </div>
-
-        <div id="contact" class="card fade-up delay-3" style="margin-top:12px;">
-          <h2>Contact</h2>
-          <div class="contact-list" style="margin-top:10px;">
-            <div class="contact-item"><strong>Email</strong><span style="margin-left:auto;color:var(--muted)">youremail@example.com</span></div>
-            <div class="contact-item"><strong>Phone</strong><span style="margin-left:auto;color:var(--muted)">+91 98765 43210</span></div>
-            <div class="contact-item"><strong>Location</strong><span style="margin-left:auto;color:var(--muted)">Pune, India</span></div>
-          </div>
-
-          <!-- Simple non-functional form (HTML only) -->
-          <form style="margin-top:12px; display:flex;flex-direction:column; gap:8px;">
-            <input aria-label="Your name" placeholder="Your name" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:var(--muted)" />
-            <input aria-label="Email" placeholder="Email" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:var(--muted)" />
-            <textarea aria-label="Message" placeholder="Message" rows="3" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:var(--muted)"></textarea>
-            <button class="btn" type="button" style="width:100%;">Send message</button>
-          </form>
-        </div>
-      </aside>
     </div>
 
-    <footer class="fade-up delay-4">
-      <div>Made with ♥ — Customize this template to make it the <strong>best website in your life</strong>.</div>
-    </footer>
-  </div>
 </body>
 </html>
